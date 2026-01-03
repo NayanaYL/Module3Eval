@@ -1,7 +1,9 @@
-const STORAGE_KEY="evalDate";
-export const getRestaurants=()=>{
-    return JSON.parse(localStorage.getItem(STORAGE_KEY))||[];
+const STORAGE_KEY = "evalData";
+
+export const getRestaurants = () => {
+  return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
 };
-export const saveRestaurants=(data)=>{
-    localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+
+export const saveRestaurants = (data) => {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 };
